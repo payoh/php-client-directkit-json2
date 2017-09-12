@@ -1,8 +1,8 @@
-The LemonWay API (called Directkit) has two implementations: Directkit**Json2** and Directkit**Xml**. 
+The Payoh API (called Directkit) has two implementations: Directkit**Json2** and Directkit**Xml**. 
 
 The Directkit**Json2** is recommended over the Directkit**Xml** because It is the simplest and the most network-efficient way.
 
-To call the directkit**Json2** in PHP: use the [`curl_init`] to send a POST request (See also the [Postman example](http://documentation.lemonway.fr/api-en/files/4194929/image2017-1-30+11%3A8%3A29.png) in [our documentation](http://documentation.lemonway.fr/api-en/directkit/overview/requests-and-responses)).
+To call the directkit**Json2** in PHP: use the [`curl_init`] to send a POST request (See also the example in [our documentation](https://payoh.me/documentazione/api/directkit.overview.request-response)).
 
 This tutorial show how simple it is.
 
@@ -30,7 +30,7 @@ After downloading this project (`git clone`), run:
 ```
 php GetWalletDetails.php 
 ```
-Out of the box it will call the `demo` environment. If you have your own test environment. You should fix the configuration in `LemonWay.php`, put your own environment configuration.
+Out of the box it will call the `demo` environment. If you have your own test environment. You should fix the configuration in `Payoh.php`, put your own environment configuration.
 
 # Time to play!
 
@@ -55,4 +55,4 @@ The example is only the basic, you can also play with our API by calling other s
 [`SoapClient`]: http://php.net/manual/en/class.soapclient.php
 [SoapClient]: https://github.com/payoh/php-client-directkit-xml-soap
 [SoapClient SDK]: https://github.com/payoh/php-client-directkit-xml-soap-sdk
-[LemonWay SDK]: https://github.com/payoh/php-client-directkit-xml
+[Payoh SDK]: https://github.com/payoh/php-client-directkit-xml
