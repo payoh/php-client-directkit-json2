@@ -9,7 +9,7 @@ This tutorial show how simple it is.
 # Sample codes
 
 ```php
-require_once "./LemonWay.php";
+require_once "./Payoh.php";
 
 try {
 	$response = callService("GetWalletDetails", array(
@@ -22,7 +22,7 @@ catch (Exception $e)
 	echo ($e);
 }
 ```
-See also: [LemonWay API documentation](http://documentation.lemonway.fr/) / method [`GetWalletDetails`](http://documentation.lemonway.fr/api-en/directkit/manage-wallets/getwalletdetails-getting-detailed-wallet-data)
+See also: [Payoh API documentation](https://payoh.me/documentazione) / method [`GetWalletDetails`](https://payoh.me/documentazione/api/directkit.wallets.get-details)
 
 # How to run
 
@@ -35,15 +35,15 @@ Out of the box it will call the `demo` environment. If you have your own test en
 # Time to play!
 
 The example is only the basic, you can also play with our API by calling other services. For example:
-- [Create a new wallet](http://documentation.lemonway.fr/api-en/directkit/manage-wallets/registerwallet-creating-a-new-wallet)
-- [Create a payment link to credit a wallet](http://documentation.lemonway.fr/api-en/directkit/money-in-credit-a-wallet/by-card/moneyinwebinit-indirect-mode-money-in-by-card-crediting-a-wallet)
-- [Credit the wallet without 3D secure](http://documentation.lemonway.fr/api-en/directkit/money-in-credit-a-wallet/by-card/moneyin-credit-a-wallet-with-a-non-3d-secure-card-payment)
-- [Credit the wallet with 3D secure](http://documentation.lemonway.fr/api-en/directkit/money-in-credit-a-wallet/by-card/moneyin3dinit-direct-mode-3d-secure-payment-init-to-credit-a-wallet)
-- [Create a payment form to credit a wallet](http://documentation.lemonway.fr/api-en/directkit/money-in-credit-a-wallet/payment-form)
-- [Register a Credit card to the wallet](http://documentation.lemonway.fr/api-en/directkit/money-in-credit-a-wallet/by-card/registercard-linking-a-card-number-to-a-wallet-for-one-click-payment-or-rebill)
-- [Register an IBAN to the wallet](http://documentation.lemonway.fr/api-en/directkit/money-out-debit-a-wallet-and-credit-a-bank-account/registeriban-link-an-iban-to-a-wallet)
-- [Transfer money from wallet to a bank account](http://documentation.lemonway.fr/api-en/directkit/money-out-debit-a-wallet-and-credit-a-bank-account/moneyout-external-fund-transfer-from-a-wallet-to-a-bank-account)
-- [Transfer money from wallet to other wallet](http://documentation.lemonway.fr/api-en/directkit/p2p-transfer-between-wallets/sendpayment-on-us-payment-between-wallets)
+- [Create a new wallet](https://payoh.me/documentazione/api/directkit.wallets.register)
+- [Create a payment link to credit a wallet](https://payoh.me/documentazione/api/directkit.moneyin.card.mi-web-initialize)
+- [Credit the wallet without 3D secure](https://payoh.me/documentazione/api/directkit.moneyin.card.mi-credit-wallet)
+- [Credit the wallet with 3D secure](https://payoh.me/documentazione/api/directkit.moneyin.card.mi-3d-initialize)
+- [Create a payment form to credit a wallet](https://payoh.me/documentazione/api/directkit.moneyin.payment-form)
+- [Register a Credit card to the wallet](https://payoh.me/documentazione/api/directkit.moneyin.card.mi-register-card)
+- [Register an IBAN to the wallet](https://payoh.me/documentazione/api/directkit.moneyout.registeriban)
+- [Transfer money from wallet to a bank account](https://payoh.me/documentazione/api/directkit.moneyout.moneyout)
+- [Transfer money from wallet to other wallet](https://payoh.me/documentazione/api/directkit.p2p.sendpayment)
 
 # Note
 
@@ -53,6 +53,6 @@ The example is only the basic, you can also play with our API by calling other s
 
 [`curl_init`]: http://php.net/manual/en/function.curl-init.php
 [`SoapClient`]: http://php.net/manual/en/class.soapclient.php
-[SoapClient]: https://github.com/lemonwaysas/php-client-directkit-xml-soap
-[SoapClient SDK]: https://github.com/lemonwaysas/php-client-directkit-xml-soap-sdk
-[LemonWay SDK]: https://github.com/lemonwaysas/php-client-directkit-xml
+[SoapClient]: https://github.com/payoh/php-client-directkit-xml-soap
+[SoapClient SDK]: https://github.com/payoh/php-client-directkit-xml-soap-sdk
+[LemonWay SDK]: https://github.com/payoh/php-client-directkit-xml
