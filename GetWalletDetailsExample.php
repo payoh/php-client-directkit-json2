@@ -1,5 +1,5 @@
 <?php
-require_once "./LemonWay.php";
+require_once "./Payoh.php";
 
 echo "<p>---------- Wallet sc: ----------</p>\n";
 try {

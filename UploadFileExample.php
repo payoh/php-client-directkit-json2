@@ -1,5 +1,5 @@
 <?php
-require_once "./LemonWay.php";
+require_once "./Payoh.php";
 
 try {
     $buffer = base64_encode(file_get_contents('images/test.jpg', true));
